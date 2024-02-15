@@ -46,102 +46,7 @@ class Expression {
 	public Expression(String user_input) {
 		this.numStorage = new NumStorage();
 		this.symbolStorage = new SymbolStorage();
-		this.value = "";
-		
-		int t = 0;
-		double sum_val = 0;
-		double v1, v2 = 0;
-		char[] v = new char[100];
-
-		for (int i = 0; i < user_input.length(); i++){
-			if (i == 0 && user_input.charAt(i) == '-') {
-				v[t] = user_input.charAt(i);
-				t += 1;
-			} else if (user_input.charAt(i) == '(' && i + 1 < user_input.length() && user_input.charAt(i + 1) == '-') {
-				i += 1;
-				v[t] = user_input.charAt(i);
-				t += 1;
-				while (i < user_input.length() && user_input.charAt(i) >= '0' && user_input.charAt(i) <= '9') {
-					v[t] = user_input.charAt(i);
-					t += 1;
-					i += 1;
-				}
-				String s = new String(Arrays.copyOfRange(v, 0, t));
-				calc.in_num_storage(this.numStorage, (double)Integer.parseInt(s));
-				while (t > 0) {
-					v[t] = Character.MIN_VALUE;
-					t -= 1;
-				}
-				if (i < user_input.length() && user_input.charAt(i) != ')') {
-					i -= 1;
-					calc.in_symbol_storage(this.symbolStorage, '(');
-				}
-			} else if (i < user_input.length() && user_input.charAt(i) >= '0' && user_input.charAt(i) <= '9') {
-				while (i < user_input.length() && user_input.charAt(i) >= '0' && user_input.charAt(i) <= '9') {
-					v[t] = user_input.charAt(i);
-					t += 1;
-					i += 1;
-				}
-				String s = new String(Arrays.copyOfRange(v, 0, t));
-				calc.in_num_storage(this.numStorage, (double)Integer.parseInt(s));
-				while (t > 0) {
-					v[t] = Character.MIN_VALUE;
-					t -= 1;
-				}
-				i -= 1;
-			} else {
-				if (this.symbolStorage.top == -1)
-					calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-				else if (calc.judge_symbol_priority(user_input.charAt(i)) == 1)
-					calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-				else if (calc.judge_symbol_priority(user_input.charAt(i)) == 2){
-					if (calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) == 1)
-						calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-					else if (calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) == 2) {
-						while (this.symbolStorage.top >= 0 && this.numStorage.top >= 1) {
-							v2 = calc.get_num_data(this.numStorage);
-							v1 = calc.get_num_data(this.numStorage);
-							sum_val = calc.math(v1, v2, calc.get_symbol(this.symbolStorage));
-							calc.in_num_storage(this.numStorage, sum_val);
-						}
-						calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-					}
-					else if (calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) == 3) {
-						while (this.symbolStorage.top >= 0 && this.numStorage.top >= 1) {
-							v2 = calc.get_num_data(this.numStorage);
-							v1 = calc.get_num_data(this.numStorage);
-							sum_val = calc.math(v1, v2, calc.get_symbol(this.symbolStorage));
-							calc.in_num_storage(this.numStorage, sum_val);
-						}
-						calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-					}
-				}
-				else if (calc.judge_symbol_priority(user_input.charAt(i)) == 3) {
-					if (calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) == 1)
-						calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-					else if (calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) == 2)
-						calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-					else if (calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) == 3) {
-						while (this.symbolStorage.top >= 0 && this.numStorage.top >= 1) {
-							v2 = calc.get_num_data(this.numStorage);
-							v1 = calc.get_num_data(this.numStorage);
-							sum_val = calc.math(v1, v2, calc.get_symbol(this.symbolStorage));
-							calc.in_num_storage(this.numStorage, sum_val);
-						}
-						calc.in_symbol_storage(this.symbolStorage, user_input.charAt(i));
-					}
-				}
-				else if (calc.judge_symbol_priority(user_input.charAt(i)) == 4) {
-					while (this.symbolStorage.top >= 0 && calc.judge_symbol_priority(calc.read_symbol_storage(this.symbolStorage)) != 1) {
-						v2 = calc.get_num_data(this.numStorage);
-						v1 = calc.get_num_data(this.numStorage);
-						sum_val = calc.math(v1, v2, calc.get_symbol(this.symbolStorage));
-						calc.in_num_storage(this.numStorage, sum_val);
-					}
-					calc.get_symbol(this.symbolStorage);
-				}
-			}
-		}
+		this.value = user_input;
 	}
 
 	public double evaluate_expression() {
@@ -217,10 +122,106 @@ class Calculator {
 	}
 
 	public double evaluate_expression(Expression exp) {
+		String user_input = exp.value;
+		int t = 0;
+		double sum_val = 0;
+		double v1, v2 = 0;
+		char[] v = new char[100];
+		
+
+		for (int i = 0; i < user_input.length(); i++){
+			if (i == 0 && user_input.charAt(i) == '-') {
+				v[t] = user_input.charAt(i);
+				t += 1;
+			} else if (user_input.charAt(i) == '(' && i + 1 < user_input.length() && user_input.charAt(i + 1) == '-') {
+				i += 1;
+				v[t] = user_input.charAt(i);
+				t += 1;
+				while (i < user_input.length() && user_input.charAt(i) >= '0' && user_input.charAt(i) <= '9') {
+					v[t] = user_input.charAt(i);
+					t += 1;
+					i += 1;
+				}
+				String s = new String(Arrays.copyOfRange(v, 0, t));
+				in_num_storage(exp.numStorage, (double)Integer.parseInt(s));
+				while (t > 0) {
+					v[t] = Character.MIN_VALUE;
+					t -= 1;
+				}
+				if (i < user_input.length() && user_input.charAt(i) != ')') {
+					i -= 1;
+					in_symbol_storage(exp.symbolStorage, '(');
+				}
+			} else if (i < user_input.length() && user_input.charAt(i) >= '0' && user_input.charAt(i) <= '9') {
+				while (i < user_input.length() && user_input.charAt(i) >= '0' && user_input.charAt(i) <= '9') {
+					v[t] = user_input.charAt(i);
+					t += 1;
+					i += 1;
+				}
+				String s = new String(Arrays.copyOfRange(v, 0, t));
+				in_num_storage(exp.numStorage, (double)Integer.parseInt(s));
+				while (t > 0) {
+					v[t] = Character.MIN_VALUE;
+					t -= 1;
+				}
+				i -= 1;
+			} else {
+				if (exp.symbolStorage.top == -1)
+					in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+				else if (judge_symbol_priority(user_input.charAt(i)) == 1)
+					in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+				else if (judge_symbol_priority(user_input.charAt(i)) == 2){
+					if (judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) == 1)
+						in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+					else if (judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) == 2) {
+						while (exp.symbolStorage.top >= 0 && exp.numStorage.top >= 1) {
+							v2 = get_num_data(exp.numStorage);
+							v1 = get_num_data(exp.numStorage);
+							sum_val = math(v1, v2, get_symbol(exp.symbolStorage));
+							in_num_storage(exp.numStorage, sum_val);
+						}
+						in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+					}
+					else if (judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) == 3) {
+						while (exp.symbolStorage.top >= 0 && exp.numStorage.top >= 1) {
+							v2 = get_num_data(exp.numStorage);
+							v1 = get_num_data(exp.numStorage);
+							sum_val = math(v1, v2, get_symbol(exp.symbolStorage));
+							in_num_storage(exp.numStorage, sum_val);
+						}
+						in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+					}
+				}
+				else if (judge_symbol_priority(user_input.charAt(i)) == 3) {
+					if (judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) == 1)
+						in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+					else if (judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) == 2)
+						in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+					else if (judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) == 3) {
+						while (exp.symbolStorage.top >= 0 && exp.numStorage.top >= 1) {
+							v2 = get_num_data(exp.numStorage);
+							v1 = get_num_data(exp.numStorage);
+							sum_val = math(v1, v2, get_symbol(exp.symbolStorage));
+							in_num_storage(exp.numStorage, sum_val);
+						}
+						in_symbol_storage(exp.symbolStorage, user_input.charAt(i));
+					}
+				}
+				else if (judge_symbol_priority(user_input.charAt(i)) == 4) {
+					while (exp.symbolStorage.top >= 0 && judge_symbol_priority(read_symbol_storage(exp.symbolStorage)) != 1) {
+						v2 = get_num_data(exp.numStorage);
+						v1 = get_num_data(exp.numStorage);
+						sum_val = math(v1, v2, get_symbol(exp.symbolStorage));
+						in_num_storage(exp.numStorage, sum_val);
+					}
+					get_symbol(exp.symbolStorage);
+				}
+			}
+		}
 		while (exp.symbolStorage.top != -1) {
-			double v2 = get_num_data(exp.numStorage);
-			double v1 = get_num_data(exp.numStorage);
-			double sum_val = math(v1, v2, get_symbol(exp.symbolStorage));
+			v2 = get_num_data(exp.numStorage);
+			v1 = get_num_data(exp.numStorage);
+			sum_val = math(v1, v2, get_symbol(exp.symbolStorage));
 			in_num_storage(exp.numStorage, sum_val);
 		}
 		return exp.numStorage.number[0];
