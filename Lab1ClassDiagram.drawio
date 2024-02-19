@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T21:11:56.205Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="WfxTtnbIq8-BqP5z1YBY" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-19T21:18:39.875Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="tE0HMqcHj_8HuJu_qr5g" version="23.1.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="989" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -204,7 +204,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8mmKfWHj2jW7nFUSoCFk-26" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;In the context of a calculator we can also create the classes BinaryCalc and UnaryCalc to process simple expressions such as &quot;1 + 5&quot; or &quot;-(7)&quot; etc. This has no purpose in relation to calculator&#39;s operation but rather is an optional inheritance of the Calculator class if a user would like to only input a specific kind of expression. In practice, these should have a smaller runtime and might be preferred if thee user needs to process a large amount of calculations at a time&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="45" y="670" width="175" height="30" as="geometry" />
+          <mxGeometry x="27.5" y="670" width="175" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-27" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Reduced original python logic into more digestible operations such as add, sub, div, mult which are methods used by evaluateExpression(). The method judgePriority(char) was deemed necessary in our view of an OO design as it would be useful in the main method evaluateExpression(); this method should effectively use the Expression class and the operand/ operator stacks stored within it to parse the expression and then use it&#39;s own methods to perform the actual calculation.&lt;br&gt;&lt;br&gt;In the event there is no expression &quot;attached&quot; to our Calculator we would hypothetically have an &quot;if null&quot; condition which returns some default value. You can imagine the other methods still offer individual functionality if a user wants to manually perform an operation rather than letting it be parsed via command line.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="620" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
