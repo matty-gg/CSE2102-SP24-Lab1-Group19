@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T21:25:17.312Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="1gqCobYIJ2IjZDjfgAwU" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T02:53:23.440Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="KqYEk9r97sEjDcKc21gN" version="23.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="989" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -113,7 +113,7 @@
             <mxPoint x="429.5" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="X_dZzA1Fd2ce8JBZJcsr-15" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1" source="8mmKfWHj2jW7nFUSoCFk-19">
+        <mxCell id="X_dZzA1Fd2ce8JBZJcsr-15" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8mmKfWHj2jW7nFUSoCFk-19" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="429.5" y="470" as="sourcePoint" />
             <mxPoint x="430" y="400" as="targetPoint" />
@@ -149,70 +149,70 @@
             <mxPoint x="260" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-3" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#050505;rotation=90;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-3" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#050505;rotation=90;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="140" y="170" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-10" value="&lt;b&gt;Key:&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-10" value="&lt;b&gt;Key:&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="70" y="140" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-11" value="Composition:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-11" value="Composition:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="50" y="170" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-14" value="Aggregation:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-14" value="Aggregation:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="50" y="190" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-16" value="" style="rhombus;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-16" value="" style="rhombus;whiteSpace=wrap;html=1;rotation=90;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="140" y="190" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="40" y="170" as="sourcePoint" />
             <mxPoint x="160" y="169" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-20" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="8mmKfWHj2jW7nFUSoCFk-19">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-20" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="8mmKfWHj2jW7nFUSoCFk-19" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="429.5" y="470" as="sourcePoint" />
             <mxPoint x="430" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-19" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-19" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="425" y="400" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-21" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#050505;rotation=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-21" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#050505;rotation=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="425" y="200" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.992;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TLz8Zv02OLpcTSxIptnl-12" target="X_dZzA1Fd2ce8JBZJcsr-2">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.992;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TLz8Zv02OLpcTSxIptnl-12" target="X_dZzA1Fd2ce8JBZJcsr-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="230" y="590" as="sourcePoint" />
             <mxPoint x="200" y="640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="niL1JPbhFjUYnsxkRV-l-20">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="niL1JPbhFjUYnsxkRV-l-20" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="220" y="840" as="sourcePoint" />
             <mxPoint x="270" y="790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-24" value="Inheritance:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-24" value="Inheritance:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="50" y="210" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-25" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="125" y="224.66" as="sourcePoint" />
             <mxPoint x="165" y="224.66" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-26" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;In the context of a calculator we can also create the classes BinaryCalc and UnaryCalc to process simple expressions such as &quot;1 + 5&quot; or &quot;-(7)&quot; etc. This has no purpose in relation to calculator&#39;s operation but rather is an optional inheritance of the Calculator class if a user would like to only input a specific kind of expression. In practice, these should have a smaller runtime and might be preferred if thee user needs to process a large amount of calculations at a time&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-26" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;In the context of a calculator we can also create the classes BinaryCalc and UnaryCalc to process simple expressions such as &quot;1 + 5&quot; or &quot;-(7)&quot; etc. This has no purpose in relation to calculator&#39;s operation but rather is an optional inheritance of the Calculator class if a user would like to only input a specific kind of expression. In practice, these should have a smaller runtime and might be preferred if the user needs to process a large amount of calculations at a time&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="27.5" y="670" width="175" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-27" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Reduced original python logic into more digestible operations such as add, sub, div, mult which are methods used by evaluateExpression(). The method judgePriority(char) was deemed necessary in our view of an OO design as it would be useful in the main method evaluateExpression(); this method should effectively use the Expression class and the operand/ operator stacks stored within it to parse the expression and then use it&#39;s own methods to perform the actual calculation.&lt;br&gt;&lt;br&gt;In the event there is no expression &quot;attached&quot; to our Calculator we would hypothetically have an &quot;if null&quot; condition which returns some default value. You can imagine the other methods still offer individual functionality if a user wants to manually perform an operation rather than letting it be parsed via command line.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-27" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Reduced original python logic into more digestible operations such as add, sub, div, and mult which are methods used by evaluateExpression(). The method judgePriority(char) was deemed necessary in our view of an OO design as it would be useful in the main method evaluateExpression(); this method should effectively use the Expression class and the operand/ operator stacks stored within it to parse the expression and then use it&#39;s own methods to perform the actual calculation.&lt;br&gt;&lt;br&gt;In the event there is no expression &quot;attached&quot; to our Calculator we would hypothetically have an &quot;if null&quot; condition which returns some default value. You can imagine the other methods still offer individual functionality if a user wants to manually perform an operation rather than letting it be parsed via command line.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="560" y="620" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Believed it was more ideal that the stack contain its own methods to manipulate it&#39;s own data rather than being a sitting &quot;chunk&quot; of data&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;It is more ideal that the stack contain its own methods to manipulate it&#39;s own data rather than being a sitting &quot;chunk&quot; of data&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="510" y="95" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8mmKfWHj2jW7nFUSoCFk-29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Expression class will create instances of operandStack and operatorStack as to manage that specific expression, assume that expression has the default methods &lt;b&gt;setExp(exp) and getExp() &lt;/b&gt;so that we can hypothetically receive a command line argument and set the value of expression which can later by retrieved through the getter. Assume private level protection which requires getter and setter.&amp;nbsp;&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8mmKfWHj2jW7nFUSoCFk-29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Expression class will create instances of operandStack and operatorStack as to manage that specific expression, assume that expression has the default methods &lt;b&gt;setExp(exp) and getExp() &lt;/b&gt;so that we can hypothetically receive a command line argument and set the value of expression which can later be retrieved through the getter. Assume private level protection which requires getter and setter.&amp;nbsp;&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="130" y="330" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
