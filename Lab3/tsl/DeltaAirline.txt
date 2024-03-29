@@ -1,7 +1,7 @@
 RoundTripForm:
     DepartureLocation:
         BDL.
-        PVD.
+        PVD. 
         Invalid Departure Location.  [error]
     ArrivalLocation:
         ATL.
@@ -21,22 +21,27 @@ RoundTripForm:
         Return Date Out Of Range. [error]
         Invalid Date Entered. [error]
     NumberOfPassengers:
-        One passenger.  [property OP]
-        Four passengers. [property FP]
-        Nine passenger. [property NP]
+        One passenger.  [property OnePassenger]
+        Four passengers. [property FourPassengers]
+        Nine passenger. [property NinePassengers]
         Can't exceed 9 passengers. [error]
-    SearchOptions:
-        Shop With Miles, My Dates Are Flexible. [property SWM] [property FLX]
-        Refundable Fares. [if !SWM] [property RF] [else] [error]
-        MyDates Are Flexible. [property FLX]
-        My Dates Are Flexible, Refundable Fares. [if !SWM] [property FLX] [property RF] [else] [error]
+
+Search Options:
+    Shop With Miles:
+        Enabled. [property SWM]
+        Disabled.
+    Refundable Fares:
+        Enabled. [if !SWM] [property RF]
+        Disabled.
+    My Dates Are Flexible:
+        Enabled. [property FLX]
+        Disabled.
     ShowFares:
         Include Nearby Airports. [if SWM || !FLX] [property INA] [else] [error]
     BestFaresFor:
-        Basic.
-        First Class.
+        Basic. 
+        First Class. 
     Meeting:
         Meeting Code Field Blank. [if !SWM]
         Valid Meeting Code. [if !SWM]
         Invalid Meeting Code. [if !SWM] [error]
-
