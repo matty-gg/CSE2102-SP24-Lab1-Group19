@@ -1,12 +1,12 @@
 RoundTripForm:
     DepartureLocation:
-        BDL.
-        PVD. 
+        BDL. 
+        PVD. [single]
         Invalid Departure Location.  [error]
     ArrivalLocation:
         ATL.
-        EWR.
-        MSP.
+        EWR. [single]
+        MSP. [single]
         Invalid Arrival Location.  [error]
     DepartureDate:
         Today.  [property DepartToday]
@@ -30,18 +30,18 @@ Search Options:
     Shop With Miles:
         Enabled. [property SWM]
         Disabled.
-    Refundable Fares:
-        Enabled. [if !SWM] [property RF]
-        Disabled.
     My Dates Are Flexible:
         Enabled. [property FLX]
-        Disabled.
+        Disabled. 
+    Refundable Fares:
+        Enabled. [if !SWM] [property RF]
+        Disabled.[if !SWM]
     ShowFares:
         Include Nearby Airports. [if SWM || !FLX] [property INA] [else] [error]
     BestFaresFor:
         Basic. 
         First Class. 
     Meeting:
-        Meeting Code Field Blank. [if !SWM]
-        Valid Meeting Code. [if !SWM]
+        Meeting Code Field Blank. [if !SWM] [single]
+        Valid Meeting Code. [if !SWM] 
         Invalid Meeting Code. [if !SWM] [error]
