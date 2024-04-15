@@ -1,0 +1,2580 @@
+
+Test Case 1  		<single>
+   DepartureLocation :  PVD
+
+
+Test Case 2  		<error>
+   DepartureLocation :  Invalid Departure Location
+
+
+Test Case 3  		<single>
+   ArrivalLocation :  EWR
+
+
+Test Case 4  		<single>
+   ArrivalLocation :  MSP
+
+
+Test Case 5  		<error>
+   ArrivalLocation :  Invalid Arrival Location
+
+
+Test Case 6  		<error>
+   DepartureDate :  Departure Date Out Of Range
+
+
+Test Case 7  		<error>
+   DepartureDate :  Invalid Date Entered
+
+
+Test Case 8  		<error>
+   ReturnDate :  Return Date Out Of Range
+
+
+Test Case 9  		<error>
+   ReturnDate :  Invalid Date Entered
+
+
+Test Case 10 		<single>  (follows [if])
+   NumberOfPassengers :  Four passengers
+
+
+Test Case 11 		<single>  (follows [if])
+   NumberOfPassengers :  Nine passenger
+
+
+Test Case 12 		<error>
+   NumberOfPassengers :  Can't exceed 9 passengers
+
+
+Test Case 13 		<error>  (follows [else])
+   ShowFares :  Include Nearby Airports
+
+
+Test Case 14 		<single>  (follows [if])
+   Meeting :  Meeting Code Field Blank
+
+
+Test Case 15 		<error>  (follows [if])
+   Meeting :  Invalid Meeting Code
+
+
+Test Case 16 		(Key = 1.1.1.1.1.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 17 		(Key = 1.1.1.1.1.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 18 		(Key = 1.1.1.1.1.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 19 		(Key = 1.1.1.1.1.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 20 		(Key = 1.1.1.1.1.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 21 		(Key = 1.1.1.1.1.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 22 		(Key = 1.1.1.1.1.2.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 23 		(Key = 1.1.1.1.1.2.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 24 		(Key = 1.1.1.1.1.2.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 25 		(Key = 1.1.1.1.1.2.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 26 		(Key = 1.1.1.1.1.2.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 27 		(Key = 1.1.1.1.1.2.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 28 		(Key = 1.1.1.1.1.3.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 29 		(Key = 1.1.1.1.1.3.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 30 		(Key = 1.1.1.1.1.3.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 31 		(Key = 1.1.1.1.1.3.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 32 		(Key = 1.1.1.1.1.3.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 33 		(Key = 1.1.1.1.1.3.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 34 		(Key = 1.1.1.1.2.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 35 		(Key = 1.1.1.1.2.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 36 		(Key = 1.1.1.1.2.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 37 		(Key = 1.1.1.1.2.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 38 		(Key = 1.1.1.1.2.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 39 		(Key = 1.1.1.1.2.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 40 		(Key = 1.1.1.1.3.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 41 		(Key = 1.1.1.1.3.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 42 		(Key = 1.1.1.1.3.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 43 		(Key = 1.1.1.1.3.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 44 		(Key = 1.1.1.1.3.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 45 		(Key = 1.1.1.1.3.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 46 		(Key = 1.1.1.2.1.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 47 		(Key = 1.1.1.2.1.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 48 		(Key = 1.1.1.2.1.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 49 		(Key = 1.1.1.2.1.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 50 		(Key = 1.1.1.2.1.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 51 		(Key = 1.1.1.2.1.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 52 		(Key = 1.1.1.2.1.2.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 53 		(Key = 1.1.1.2.1.2.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 54 		(Key = 1.1.1.2.1.2.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 55 		(Key = 1.1.1.2.1.2.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 56 		(Key = 1.1.1.2.1.2.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 57 		(Key = 1.1.1.2.1.2.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 58 		(Key = 1.1.1.2.1.3.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 59 		(Key = 1.1.1.2.1.3.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 60 		(Key = 1.1.1.2.1.3.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 61 		(Key = 1.1.1.2.1.3.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 62 		(Key = 1.1.1.2.1.3.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 63 		(Key = 1.1.1.2.1.3.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 64 		(Key = 1.1.1.2.2.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 65 		(Key = 1.1.1.2.2.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 66 		(Key = 1.1.1.2.2.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 67 		(Key = 1.1.1.2.2.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 68 		(Key = 1.1.1.2.2.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 69 		(Key = 1.1.1.2.2.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 70 		(Key = 1.1.1.2.3.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 71 		(Key = 1.1.1.2.3.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 72 		(Key = 1.1.1.2.3.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 73 		(Key = 1.1.1.2.3.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 74 		(Key = 1.1.1.2.3.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 75 		(Key = 1.1.1.2.3.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 76 		(Key = 1.1.1.3.1.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 77 		(Key = 1.1.1.3.1.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 78 		(Key = 1.1.1.3.1.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 79 		(Key = 1.1.1.3.1.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 80 		(Key = 1.1.1.3.1.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 81 		(Key = 1.1.1.3.1.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 82 		(Key = 1.1.1.3.1.2.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 83 		(Key = 1.1.1.3.1.2.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 84 		(Key = 1.1.1.3.1.2.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 85 		(Key = 1.1.1.3.1.2.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 86 		(Key = 1.1.1.3.1.2.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 87 		(Key = 1.1.1.3.1.2.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 88 		(Key = 1.1.1.3.1.3.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 89 		(Key = 1.1.1.3.1.3.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 90 		(Key = 1.1.1.3.1.3.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 91 		(Key = 1.1.1.3.1.3.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 92 		(Key = 1.1.1.3.1.3.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 93 		(Key = 1.1.1.3.1.3.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 94 		(Key = 1.1.1.3.2.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 95 		(Key = 1.1.1.3.2.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 96 		(Key = 1.1.1.3.2.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 97 		(Key = 1.1.1.3.2.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 98 		(Key = 1.1.1.3.2.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 99 		(Key = 1.1.1.3.2.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 100		(Key = 1.1.1.3.3.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 101		(Key = 1.1.1.3.3.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 102		(Key = 1.1.1.3.3.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 103		(Key = 1.1.1.3.3.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 104		(Key = 1.1.1.3.3.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 105		(Key = 1.1.1.3.3.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 106		(Key = 1.1.2.2.1.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 107		(Key = 1.1.2.2.1.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 108		(Key = 1.1.2.2.1.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 109		(Key = 1.1.2.2.1.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 110		(Key = 1.1.2.2.1.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 111		(Key = 1.1.2.2.1.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 112		(Key = 1.1.2.2.1.2.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 113		(Key = 1.1.2.2.1.2.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 114		(Key = 1.1.2.2.1.2.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 115		(Key = 1.1.2.2.1.2.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 116		(Key = 1.1.2.2.1.2.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 117		(Key = 1.1.2.2.1.2.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 118		(Key = 1.1.2.2.1.3.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 119		(Key = 1.1.2.2.1.3.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 120		(Key = 1.1.2.2.1.3.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 121		(Key = 1.1.2.2.1.3.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 122		(Key = 1.1.2.2.1.3.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 123		(Key = 1.1.2.2.1.3.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 124		(Key = 1.1.2.2.2.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 125		(Key = 1.1.2.2.2.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 126		(Key = 1.1.2.2.2.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 127		(Key = 1.1.2.2.2.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 128		(Key = 1.1.2.2.2.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 129		(Key = 1.1.2.2.2.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 130		(Key = 1.1.2.2.3.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 131		(Key = 1.1.2.2.3.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 132		(Key = 1.1.2.2.3.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 133		(Key = 1.1.2.2.3.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 134		(Key = 1.1.2.2.3.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 135		(Key = 1.1.2.2.3.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  One month from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 136		(Key = 1.1.2.3.1.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 137		(Key = 1.1.2.3.1.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 138		(Key = 1.1.2.3.1.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 139		(Key = 1.1.2.3.1.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 140		(Key = 1.1.2.3.1.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 141		(Key = 1.1.2.3.1.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 142		(Key = 1.1.2.3.1.2.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 143		(Key = 1.1.2.3.1.2.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 144		(Key = 1.1.2.3.1.2.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 145		(Key = 1.1.2.3.1.2.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 146		(Key = 1.1.2.3.1.2.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 147		(Key = 1.1.2.3.1.2.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 148		(Key = 1.1.2.3.1.3.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 149		(Key = 1.1.2.3.1.3.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 150		(Key = 1.1.2.3.1.3.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 151		(Key = 1.1.2.3.1.3.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 152		(Key = 1.1.2.3.1.3.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 153		(Key = 1.1.2.3.1.3.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 154		(Key = 1.1.2.3.2.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 155		(Key = 1.1.2.3.2.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 156		(Key = 1.1.2.3.2.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 157		(Key = 1.1.2.3.2.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 158		(Key = 1.1.2.3.2.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 159		(Key = 1.1.2.3.2.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 160		(Key = 1.1.2.3.3.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 161		(Key = 1.1.2.3.3.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 162		(Key = 1.1.2.3.3.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 163		(Key = 1.1.2.3.3.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 164		(Key = 1.1.2.3.3.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 165		(Key = 1.1.2.3.3.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  One month from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 166		(Key = 1.1.3.3.1.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 167		(Key = 1.1.3.3.1.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 168		(Key = 1.1.3.3.1.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 169		(Key = 1.1.3.3.1.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 170		(Key = 1.1.3.3.1.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 171		(Key = 1.1.3.3.1.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 172		(Key = 1.1.3.3.1.2.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 173		(Key = 1.1.3.3.1.2.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 174		(Key = 1.1.3.3.1.2.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 175		(Key = 1.1.3.3.1.2.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 176		(Key = 1.1.3.3.1.2.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 177		(Key = 1.1.3.3.1.2.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Four passengers
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 178		(Key = 1.1.3.3.1.3.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 179		(Key = 1.1.3.3.1.3.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 180		(Key = 1.1.3.3.1.3.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 181		(Key = 1.1.3.3.1.3.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 182		(Key = 1.1.3.3.1.3.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 183		(Key = 1.1.3.3.1.3.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Basic
+   NumberOfPassengers    :  Nine passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 184		(Key = 1.1.3.3.2.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 185		(Key = 1.1.3.3.2.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 186		(Key = 1.1.3.3.2.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 187		(Key = 1.1.3.3.2.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 188		(Key = 1.1.3.3.2.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 189		(Key = 1.1.3.3.2.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  Main Cabin
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 190		(Key = 1.1.3.3.3.1.1.1.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 191		(Key = 1.1.3.3.3.1.1.2.0.1.0.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Enabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  <n/a>
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  <n/a>
+
+
+Test Case 192		(Key = 1.1.3.3.3.1.2.1.1.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 193		(Key = 1.1.3.3.3.1.2.1.2.0.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Enabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  <n/a>
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 194		(Key = 1.1.3.3.3.1.2.2.1.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Enabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+
+
+Test Case 195		(Key = 1.1.3.3.3.1.2.2.2.1.2.)
+   DepartureLocation     :  BDL
+   ArrivalLocation       :  ATL
+   DepartureDate         :  Eleven months from today
+   ReturnDate            :  Eleven months from today
+   BestFaresFor          :  First Class
+   NumberOfPassengers    :  One passenger
+   Shop With Miles       :  Disabled
+   My Dates Are Flexible :  Disabled
+   Refundable Fares      :  Disabled
+   ShowFares             :  Include Nearby Airports
+   Meeting               :  Valid Meeting Code
+

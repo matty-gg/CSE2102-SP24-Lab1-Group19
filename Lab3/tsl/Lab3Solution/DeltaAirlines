@@ -1,0 +1,50 @@
+RoundTripForm:
+    DepartureLocation:
+        BDL. # base departure for tests
+        PVD. [single]
+        Invalid Departure Location.  [error]
+    ArrivalLocation:
+        ATL. # base arrival for tests
+        EWR. [single]
+        MSP. [single]
+        Invalid Arrival Location.  [error]
+    DepartureDate:
+        Today.  [property DepartToday]
+        One month from today.   [property DepartOneMonth]
+        Eleven months from today.   [property DepartElevenMonth]
+        Departure Date Out Of Range. [error]
+        Invalid Date Entered. [error]
+    ReturnDate:
+        Today.  [if DepartToday] # can not return on earlier date
+        One month from today. [if DepartToday || DepartOneMonth]
+        Eleven months from today.
+        Return Date Out Of Range. [error]
+        Invalid Date Entered. [error]
+    BestFaresFor:
+        Basic.
+        Main Cabin. [property MC]
+        First Class. [property FC]
+    NumberOfPassengers:
+        One passenger.  [property OnePassenger]
+        Four passengers. [property FourPassengers] [if FC || MC] [single] [else] # one test for first class and main cabin
+        Nine passenger. [property NinePassengers] [if FC || MC] [single] [else] # one test for first class and main cabin
+        Can't exceed 9 passengers. [error]
+
+# search options have special logic
+
+Search Options:
+    Shop With Miles:
+        Enabled. [property SWM]
+        Disabled.
+    My Dates Are Flexible:
+        Enabled. [property FLX]
+        Disabled. 
+    Refundable Fares:
+        Enabled. [if !SWM] [property RF]
+        Disabled.[if !SWM]
+    ShowFares:
+        Include Nearby Airports. [if SWM || !FLX] [property INA] [else] [error]
+    Meeting:
+        Meeting Code Field Blank. [if !SWM] [single]
+        Valid Meeting Code. [if !SWM] 
+        Invalid Meeting Code. [if !SWM] [error]
