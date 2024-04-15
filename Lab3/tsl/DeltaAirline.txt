@@ -1,10 +1,10 @@
 RoundTripForm:
     DepartureLocation:
-        BDL. 
+        BDL. # base departure for tests
         PVD. [single]
         Invalid Departure Location.  [error]
     ArrivalLocation:
-        ATL.
+        ATL. # base arrival for tests
         EWR. [single]
         MSP. [single]
         Invalid Arrival Location.  [error]
@@ -14,17 +14,23 @@ RoundTripForm:
         Eleven months from today.   [property DepartElevenMonth]
         Departure Date Out Of Range. [error]
         Invalid Date Entered. [error]
-    ReturnData:
-        Today.  [if !DepartOneMonth || !DepartElevenMonth] [property returnToday] [else] [error]
-        One month from today. [if !DepartElevenMonth] [property returnOneMonth] [else] [error]
+    ReturnDate:
+        Today.  [if DepartToday] # can not return on earlier date
+        One month from today. [if DepartToday || DepartOneMonth]
         Eleven months from today.
         Return Date Out Of Range. [error]
         Invalid Date Entered. [error]
+    BestFaresFor:
+        Basic.
+        Main Cabin. [property MC]
+        First Class. [property FC]
     NumberOfPassengers:
         One passenger.  [property OnePassenger]
-        Four passengers. [property FourPassengers]
-        Nine passenger. [property NinePassengers]
+        Four passengers. [property FourPassengers] [if FC || MC] [single] [else] # one test for first class and main cabin
+        Nine passenger. [property NinePassengers] [if FC || MC] [single] [else] # one test for first class and main cabin
         Can't exceed 9 passengers. [error]
+
+# search options have special logic
 
 Search Options:
     Shop With Miles:
@@ -38,9 +44,6 @@ Search Options:
         Disabled.[if !SWM]
     ShowFares:
         Include Nearby Airports. [if SWM || !FLX] [property INA] [else] [error]
-    BestFaresFor:
-        Basic. 
-        First Class. 
     Meeting:
         Meeting Code Field Blank. [if !SWM] [single]
         Valid Meeting Code. [if !SWM] 
